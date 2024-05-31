@@ -12,10 +12,6 @@ namespace Kreta.Desktop.Service
         {
             _studentRepo = studentRepo;
         }
-        public double GetAvgAge(int year, SchoolClassType type)
-        {
-            throw new NotImplementedException();
-        }
 
         public int GetNumberOfMen()
         {
@@ -27,32 +23,12 @@ namespace Kreta.Desktop.Service
             throw new NotImplementedException();
         }
 
-        public int GetNumberOfWomen(int year, SchoolClassType type)
-        {
-            throw new NotImplementedException();
-        }
-
         public int GetNumberOfWomen()
         {
             throw new NotImplementedException();
         }
 
-        public Guid GetOldestestStudent(bool gender)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Guid GetOldestStudent()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Guid GetYoungestStudent()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Guid GetYoungestStudent(bool gender)
+        public int GetNumberOfWomen(int year, SchoolClassType type)
         {
             throw new NotImplementedException();
         }

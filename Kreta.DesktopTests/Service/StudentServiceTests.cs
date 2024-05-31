@@ -8,7 +8,7 @@ namespace Kreta.Desktop.Service.Tests
     public class StudentServiceTests
     {
         private readonly IStudentService? _studentService;
-        private readonly Mock<IStudentRepo> moqStudeRepo = new Mock<IStudentRepo> ();
+        private readonly Mock<IStudentRepo> moqStudeRepo = new Mock<IStudentRepo>();
 
         public StudentServiceTests()
         {
@@ -29,6 +29,51 @@ namespace Kreta.Desktop.Service.Tests
             Assert.AreEqual(0, _studentService.GetNumberOfWomen(9, Models.SchoolClassType.ClassA), $"{nameof(_studentService.GetNumberOfWomen)} 9.a osztály paraméterrel üres adatbázis esetén hibát dobott.");
             Assert.AreEqual(0, _studentService.GetNumberOfMen(), $"{nameof(_studentService.GetNumberOfMen)} üres adatbázis esetén hibát dobott.");
             Assert.AreEqual(0, _studentService.GetNumberOfMen(9, Models.SchoolClassType.ClassA), $"{nameof(_studentService.GetNumberOfMen)} 9.a osztály paraméterrel üres adatbázis esetén hibát dobott.");
+        }
+
+        [TestMethod()]
+        public void NoEmptyDatabase()
+        {
+            // arrange
+            List<Student> awardedStudents = new List<Student>
+            {
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+                new Student
+                {
+                    Id=Guid.NewGuid(),
+                },
+            };
         }
     }
 }

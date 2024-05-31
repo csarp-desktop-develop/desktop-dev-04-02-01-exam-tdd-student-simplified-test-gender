@@ -1,11 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Kreta.Desktop.Service;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Kreta.Desktop.Repos;
+﻿using Kreta.Desktop.Repos;
 using Moq;
 
 namespace Kreta.Desktop.Service.Tests
