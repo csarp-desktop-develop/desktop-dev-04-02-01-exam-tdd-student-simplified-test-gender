@@ -18,7 +18,7 @@ namespace Kreta.Desktop.Service
             throw new NotImplementedException();
         }
 
-        public int GetNumberOfMen(int grde, SchoolClassType type)
+        public int GetNumberOfMen(int grade, SchoolClassType tschoolClassTypeype)
         {
             throw new NotImplementedException();
         }
@@ -28,7 +28,7 @@ namespace Kreta.Desktop.Service
             throw new NotImplementedException();
         }
 
-        public int GetNumberOfWomen(int grade, SchoolClassType type)
+        public int GetNumberOfWomen(int grade, SchoolClassType schoolClassType)
         {
             throw new NotImplementedException();
         }

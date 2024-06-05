@@ -86,8 +86,8 @@ namespace Kreta.Desktop.Database
                 IsWoman=false,
                 BirthDay=new DateTime(2021,3,13),
                 PlaceOfBirth="Szeged",
-                SchoolYear=9,
-                SchoolClass = SchoolClassType.ClassA,
+                Grade=9,
+                SchoolClassType = SchoolClassType.ClassA,
                 EducationLevel="szakképzés"
             },
             new() {
@@ -97,8 +97,8 @@ namespace Kreta.Desktop.Database
                 BirthDay=new DateTime(2020,4,24),
                 PlaceOfBirth="Makó",
                 IsWoman=true,
-                SchoolYear=10,
-                SchoolClass = SchoolClassType.ClassB,
+                Grade=10,
+                SchoolClassType = SchoolClassType.ClassB,
                 EducationLevel="szakképzés"
             },
             new() {
@@ -108,8 +108,8 @@ namespace Kreta.Desktop.Database
                 PlaceOfBirth="Makó",
                 IsWoman=false,
                 BirthDay=new DateTime(2020,2,11),
-                SchoolYear=10,
-                SchoolClass = SchoolClassType.ClassB,
+                Grade=10,
+                SchoolClassType = SchoolClassType.ClassB,
                 EducationLevel="érettségi"
             },
             new() {
@@ -119,8 +119,8 @@ namespace Kreta.Desktop.Database
                 PlaceOfBirth="Domaszék",
                 IsWoman=true,
                 BirthDay=new DateTime(2019,2,11),
-                SchoolYear=12,
-                SchoolClass = SchoolClassType.ClassA,
+                Grade=12,
+                SchoolClassType = SchoolClassType.ClassA,
                 EducationLevel="érettségi"
             },
             new() {
@@ -130,8 +130,8 @@ namespace Kreta.Desktop.Database
                 PlaceOfBirth="Budapest",
                 IsWoman=false,
                 BirthDay=new DateTime(2017,2,11),
-                SchoolYear=14,
-                SchoolClass = SchoolClassType.ClassA,
+                Grade=14,
+                SchoolClassType = SchoolClassType.ClassA,
                 EducationLevel="szakképzés"
             }
         };

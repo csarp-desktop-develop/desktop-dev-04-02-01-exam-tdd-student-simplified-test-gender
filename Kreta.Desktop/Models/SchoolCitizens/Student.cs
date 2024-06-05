@@ -13,8 +13,8 @@ namespace Kreta.Desktop.SchoolCitizens
             BirthDay = birthsDay;
             PlaceOfBirth = placeOfBirth;
             IsWoman = isWooman;
-            SchoolYear = schoolYear;
-            SchoolClass = schoolClass;
+            Grade = schoolYear;
+            SchoolClassType = schoolClass;
             EducationLevel = educationLevel;
         }
 
@@ -26,8 +26,8 @@ namespace Kreta.Desktop.SchoolCitizens
             BirthDay = new DateTime();
             PlaceOfBirth = string.Empty;
             IsWoman = false;
-            SchoolYear = 9;
-            SchoolClass = SchoolClassType.ClassA;
+            Grade = 9;
+            SchoolClassType = SchoolClassType.ClassA;
             EducationLevel = string.Empty;
             PlaceOfBirth = string.Empty;
         }
@@ -38,8 +38,8 @@ namespace Kreta.Desktop.SchoolCitizens
         public DateTime BirthDay { get; set; }
         public string PlaceOfBirth { get; set; }
         public bool IsWoman { get; set; }
-        public int SchoolYear { get; set; }
-        public SchoolClassType SchoolClass { get; set; }
+        public int Grade { get; set; }
+        public SchoolClassType SchoolClassType { get; set; }
         public string EducationLevel { get; set; }
         public bool HasId => Id != Guid.Empty;
         public bool IsMan => !IsWoman;
@@ -53,14 +53,14 @@ namespace Kreta.Desktop.SchoolCitizens
             BirthDay= student.BirthDay;
             PlaceOfBirth = student.PlaceOfBirth;
             IsWoman = student.IsWoman;
-            SchoolClass= student.SchoolClass;
-            SchoolYear = student.SchoolYear;
+            SchoolClassType= student.SchoolClassType;
+            Grade = student.Grade;
             PlaceOfBirth= student.PlaceOfBirth;
         }
         public override string ToString()
         {
             string woman = IsWoman ? "nő" : "férfi";
-            return $"{HungarianName} {woman} ({SchoolYear}.{SchoolClass}) - ({String.Format("{0:yyyy.MM.dd.}", BirthDay)}) ({EducationLevel})";
+            return $"{HungarianName} {woman} ({Grade}.{SchoolClassType}) - ({String.Format("{0:yyyy.MM.dd.}", BirthDay)}) ({EducationLevel})";
         }
 
 

@@ -10,7 +10,7 @@ namespace Kreta.Desktop.Service
         public int GetNumberOfMen();
 
         // előző feladatok, csak osztályonként: grade -> évfolyam, type-> "a", "b", "c"...
-        public int GetNumberOfWomen(int grade, SchoolClassType type);        
-        public int GetNumberOfMen(int grde, SchoolClassType type);
+        public int GetNumberOfWomen(int grade, SchoolClassType schoolClassType);        
+        public int GetNumberOfMen(int grade, SchoolClassType schoolClassType);
     }
 }
