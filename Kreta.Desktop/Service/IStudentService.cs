@@ -4,9 +4,13 @@ namespace Kreta.Desktop.Service
 {
     public interface IStudentService
     {
+        // diáklányok száma
         public int GetNumberOfWomen();
-        public int GetNumberOfWomen(int year, SchoolClassType type);
+        // diákok száma
         public int GetNumberOfMen();
-        public int GetNumberOfMen(int year, SchoolClassType type);
+
+        // előző feladatok, csak osztályonként: grade -> évfolyam, type-> "a", "b", "c"...
+        public int GetNumberOfWomen(int grade, SchoolClassType type);        
+        public int GetNumberOfMen(int grde, SchoolClassType type);
     }
 }
